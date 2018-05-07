@@ -107,10 +107,39 @@ ul {
 
 
 /* Mobile-first styles FTW */
-@media all and (max-width: 50em) {
+@media all and (max-width: 55em) and ( orientation: portrait ) {
     .left {
         display: none;
     }
 
+    img {
+        height: 250px;
+    }
 
+    video {
+        height: 240px;
+        top: 6px;
+        left: 27px;
+        z-index: 0;
+        position: absolute;
+    }
 }
+
+@media all and (max-width: 55em) and ( orientation: landscape ) {
+    .left {
+        display: none;
+    }
+
+    img {
+        height: 330px;
+    }
+
+    video {
+        height: 318px;
+        top: 6px;
+        left: 34px;
+        z-index: 0;
+        position: absolute;
+    }
+}
+
