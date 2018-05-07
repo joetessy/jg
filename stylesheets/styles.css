@@ -1,9 +1,13 @@
-html {
-    /* height: 100%; */
+@font-face {
+    font-family: 'proxima_nova_medium';
+    src: url('./../assets/fonts/proxima-nova-medium.eot');
+    src: url('./../assets/fonts/proxima-nova-medium.eot?#iefix') format('embedded-opentype'),
+         url('./../assets/fonts/proxima-nova-medium.woff2') format('woff2'),
+         url('./../assets/fonts/proxima-nova-medium.woff') format('woff'),
+         url('./../assets/fonts/proxima-nova-medium.ttf') format('truetype')
 }
 
 body {
-    /* font-family: sans-serif; */
     font-family: "proxima_nova_medium";
     color: rgb(238, 235, 215);
     height: 100vh;
@@ -24,10 +28,6 @@ h1 {
     font-size: 25px;
 }
 
-p {
-    line-height: 1.6;
-    font-size: 21px;
-}
 h2 {
     margin: 0;
     font-size: 40px
@@ -38,13 +38,40 @@ h3 {
     font-size: 15px;
 }
 
-.content {
+p {
+    line-height: 1.6;
+    font-size: 21px;
+}
+
+main {
     display: flex;
     justify-content: center;
     align-items: top;
 }
 
-img {
+.top {
+    width: 350px;
+    margin-bottom: 60px;
+}
+
+.left { 
+    width: 25%;
+    margin: 0 30px;
+}
+
+.right {
+    position: relative;
+    margin: 0 30px;
+}
+
+
+.video-content {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.ipad {
     height: 600px;
     z-index: 0;
     position: relative;
@@ -60,6 +87,16 @@ video {
     position: absolute;
 }
 
+.grid {
+    margin: 30px 0;
+}
+
+ul {
+    margin: 0;
+    display: flex;
+    padding: 0;
+}
+
 li {
     list-style: none;
     color: white;
@@ -73,46 +110,13 @@ li {
     align-items: center;
 }
 
-ul {
-    margin: 0;
-    display: flex;
-    padding: 0;
-}
-
-.left { 
-    width: 25%;
-    margin: 0 30px;
-}
-
-.top {
-    width: 350px;
-    margin-bottom: 60px;
-}
-
-.right {
-    /* width: 64%; */
-    position: relative;
-    margin: 0 30px;
-}
-
-.video-content {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-.grid {
-    margin: 30px 0;
-}
-
-
 /* Mobile-first styles FTW */
-@media all and (max-width: 55em) and ( orientation: portrait ) {
+/* @media all and (max-width: 55em) and ( orientation: portrait ) {
     .left {
         display: none;
     }
 
-    img {
+    .ipad {
         height: 220px;
     }
 
@@ -132,7 +136,7 @@ ul {
         display: none;
     }
 
-    img {
+    .ipad {
         height: 240px;
     }
 
@@ -145,5 +149,50 @@ ul {
     .right {
         margin: 0;
     }
+} */
+
+
+@media all and (max-width: 55em) and ( orientation: portrait ) {
+    .left {
+        display: none;
+    }
+    
+    video {
+        position: fixed;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        object-fit: fill;
+        width: 100vw;
+        height: auto;
+        background-size: cover;
+        -webkit-transform: translateY(-50%);
+    }
+
+    .ipad {
+        display: none;
+    }
 }
 
+@media all and (max-width: 55em) and ( orientation: landscape ) {
+    .left {
+        display: none;
+    }
+
+    video {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        object-fit: fill;
+        height: 100vh;
+        width: auto;
+        background-size: cover;
+        -webkit-transform: translateX(-50%);
+    }
+
+    .ipad {
+        display: none;
+    }
+}
