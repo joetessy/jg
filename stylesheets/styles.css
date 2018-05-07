@@ -1,14 +1,5 @@
-@font-face {
-    font-family: 'proxima_nova_medium';
-    src: url('./../assets/fonts/proxima-nova-medium.eot');
-    src: url('./../assets/fonts/proxima-nova-medium.eot?#iefix') format('embedded-opentype'),
-         url('./../assets/fonts/proxima-nova-medium.woff2') format('woff2'),
-         url('./../assets/fonts/proxima-nova-medium.woff') format('woff'),
-         url('./../assets/fonts/proxima-nova-medium.ttf') format('truetype')
-}
-
 body {
-    font-family: "proxima_nova_medium";
+    font-family: Helvetica Neue;
     color: #EFEBD5;
     height: 100vh;
     display: flex;
@@ -46,7 +37,7 @@ p {
 main {
     display: flex;
     justify-content: center;
-    align-items: top;
+    align-items: flex-start;
 }
 
 .top {
