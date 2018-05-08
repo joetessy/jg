@@ -102,7 +102,7 @@ li {
 }
 
 /* Mobile-first styles FTW */
-/* @media all and (max-width: 55em) and ( orientation: portrait ) {
+@media all and (max-width: 55em) and ( orientation: portrait ) {
     .left {
         display: none;
     }
@@ -140,8 +140,8 @@ li {
     .right {
         margin: 0;
     }
-} */
-
+}
+/* 
 
 @media all and (max-width: 55em) and ( orientation: portrait ) {
     .left {
@@ -186,4 +186,4 @@ li {
     .ipad {
         display: none;
     }
-}
+} */
