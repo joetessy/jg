@@ -49,6 +49,10 @@ main {
     margin-bottom: 60px;
 }
 
+.mobile_title {
+    display: none;
+}
+
 .left { 
     width: 25%;
     margin: 0 30px;
@@ -94,11 +98,11 @@ ul {
 
 li {
     list-style: none;
-    color: white;
+    color: #a16a63;
     height: 96px;
     width: 280px;
     margin: 0.5px;
-    background-color: #CEAC9E;
+    background-color: #f2e7e2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,6 +120,10 @@ li {
         height: 240px;
     }
 
+    .mobile_title {
+        display: block;
+    }
+
     video {
         height: 231px;
         top: 6px;
@@ -124,6 +132,9 @@ li {
 
     .right {
         margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -132,6 +143,10 @@ li {
         height: 90vh
     }
     
+    .mobile_title {
+        display: block;
+    }
+
     .left {
         display: none;
     }
@@ -148,51 +163,8 @@ li {
 
     .right {
         margin: 0;
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
     }
 }
-/* 
-
-@media all and (max-width: 55em) and ( orientation: portrait ) {
-    .left {
-        display: none;
-    }
-    
-    video {
-        position: fixed;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0;
-        object-fit: fill;
-        width: 100vw;
-        height: auto;
-        background-size: cover;
-        -webkit-transform: translateY(-50%);
-    }
-
-    .ipad {
-        display: none;
-    }
-}
-
-@media all and (max-width: 55em) and ( orientation: landscape ) {
-    .left {
-        display: none;
-    }
-
-    video {
-        position: fixed;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 0;
-        object-fit: fill;
-        height: 100vh;
-        width: auto;
-        background-size: cover;
-        -webkit-transform: translateX(-50%);
-    }
-
-    .ipad {
-        display: none;
-    }
-} */
