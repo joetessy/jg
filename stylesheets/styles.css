@@ -1,3 +1,7 @@
+html {
+    height: 100%;
+}
+
 body {
     font-family: Helvetica Neue;
     color: #EFEBD5;
@@ -102,27 +106,8 @@ li {
 }
 
 /* Mobile-first styles FTW */
-@media all and (max-width: 55em) and ( orientation: portrait ) {
-    .left {
-        display: none;
-    }
 
-    .ipad {
-        height: 220px;
-    }
-
-    video {
-        height: 211px;
-        top: 5px;
-        left: 24px;
-    }
-
-    .right {
-        margin: 0;
-    }
-}
-
-@media all and (max-width: 55em) and ( orientation: landscape ) {
+@media all and (max-width: 55em) {
     .left {
         display: none;
     }
@@ -135,6 +120,30 @@ li {
         height: 231px;
         top: 6px;
         left: 25px;
+    }
+
+    .right {
+        margin: 0;
+    }
+}
+
+@media all and (max-device-width: 55em) and ( orientation: portrait ) {
+    body {
+        height: 90vh
+    }
+    
+    .left {
+        display: none;
+    }
+
+    .ipad {
+        height: 220px;
+    }
+
+    video {
+        height: 211px;
+        top: 5px;
+        left: 24px;
     }
 
     .right {
