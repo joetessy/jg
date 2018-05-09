@@ -1,3 +1,7 @@
+html {
+    height: 100%;
+}
+
 body {
     font-family: Helvetica Neue;
     color: #EFEBD5;
@@ -107,7 +111,7 @@ li {
 
 /* Mobile-first styles FTW */
 
-@media all and (max-width: 55em) {
+@media all and (max-width: 70em) {
     .left {
         display: none;
     }
