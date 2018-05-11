@@ -1,5 +1,5 @@
 html {
-    height: 100%;
+    height: 100vh;
 }
 
 body {
@@ -12,10 +12,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background: #BC8379;
-    background: #BC8379;
     background: -moz-linear-gradient(-168deg, #BC8379 0%, #AA6760 87%);
+    background: linear-gradient(192deg, #BC8379 0%, #AA6761 87%);    
     background: -webkit-linear-gradient(-168deg, #BC8379 0%, #AA6769 87%);
-    background: linear-gradient(192deg, #BC8379 0%, #AA6761 87%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BC8379', endColorstr='#AA6760',GradientType=1 );
 }
 
