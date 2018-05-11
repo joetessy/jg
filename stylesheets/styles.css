@@ -172,4 +172,8 @@ li {
     h3 {
         font-size: 14px;
     }
+
+    .bottom {
+        width: 380px;
+    }
 }      
